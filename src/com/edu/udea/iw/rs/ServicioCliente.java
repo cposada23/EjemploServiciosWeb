@@ -18,6 +18,11 @@ import com.edu.udea.iw.exeption.MyDaoExeption;
 import com.edu.udea.iw.logicaNegocio.ClienteBL;
 import com.edu.udea.iw.rs.dto.ClienteWs;
 
+/**
+ * Clase para el manejo de servicios web concernientes a los clientes
+ * @author Camilo Posada Angel -- cposadaa@gmail.com
+ *
+ */
 
 @Path("ServicioCliente")
 @Component
@@ -41,8 +46,14 @@ public class ServicioCliente {
 	}
 
 
+	
+	
 
-
+	/**
+	 * Metodo para el servicio web de obtener todos los clientes
+	 * @return JSON  con la informacion de los clientes
+	 * @throws RemoteException
+	 */
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<ClienteWs> obtener() throws RemoteException{
